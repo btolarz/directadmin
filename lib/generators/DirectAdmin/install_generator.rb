@@ -1,7 +1,7 @@
 require 'rails/generators'
+module DirectAdmin
 
-
-
+  module Generators
 
     class InstallGenerator < Rails::Generators::Base
 
@@ -13,5 +13,6 @@ require 'rails/generators'
       end
     end
 
+  end
 
-
+end
