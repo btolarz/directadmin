@@ -1,3 +1,4 @@
+require 'rails/generators'
 module DirectAdmin
 
   module Generators
@@ -8,7 +9,7 @@ module DirectAdmin
 
       desc "Creates directadmin initializer"
       def copy_initializer
-        template '../templates/direct_admin.rb.erb', 'config/initializers/direct_admin.rb'
+        template '../templates/direct_admin.rb', 'config/initializers/direct_admin.rb'
       end
     end
 
