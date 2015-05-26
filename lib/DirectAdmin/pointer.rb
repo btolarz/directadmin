@@ -1,4 +1,4 @@
-class DirectAdmin::Pinter
+class DirectAdmin::Pinter  < DirectAdmin::Connector
 
   def list(domain)
     data = {

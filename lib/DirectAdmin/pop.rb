@@ -1,4 +1,4 @@
-class DirectAdmin::POP
+class DirectAdmin::POP < DirectAdmin::Connector
 
   def pop_list
     data = {

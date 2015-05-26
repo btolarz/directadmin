@@ -1,4 +1,4 @@
-class DirectAdmin::Domain
+class DirectAdmin::Domain < DirectAdmin::Connector
 
   def list
     CGI::parse(create_request('CMD_API_SHOW_DOMAINS'))["list[]"]
