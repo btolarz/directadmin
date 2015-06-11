@@ -4,10 +4,10 @@ class DirectAdmin::Account < DirectAdmin::Connector
     Rack::Utils.parse_nested_query(create_request('CMD_API_SHOW_ALL_USERS'))['list']
   end
 
-  def create(username,email,password)
+  def create(username,email,password,domain)
     data = {
-      ip: '188.116.20.170',
-      domain: "#{username}.flat2go.pl",
+      ip: DA_host,
+      domain: domain,
       username: username,
       email: email,
       passwd: password,
